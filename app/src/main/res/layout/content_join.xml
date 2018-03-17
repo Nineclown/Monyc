@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.nineclown.monyc.join.JoinActivity"
+    tools:showIn="@layout/activity_join">
+
+    <ImageView
+        android:id="@+id/aj_iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/join_logo" />
+
+    <RelativeLayout
+        android:id="@+id/aj_Join_Tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aj_iv_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/aj_tv_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/join_tab_bg_selector"
+            android:text="@string/sign_in"
+            android:textColor="@drawable/join_tab_color_selector"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/aj_tv_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/aj_tv_sign_in"
+            android:layout_toRightOf="@+id/aj_tv_sign_in"
+            android:background="@drawable/join_tab_bg_selector"
+            android:text="@string/sign_up"
+            android:textColor="@drawable/join_tab_color_selector"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/aj_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aj_Join_Tab"></android.support.v4.view.ViewPager>
+</RelativeLayout>

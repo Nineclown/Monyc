@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/aa_mid_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:id="@+id/aa_class_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/aa_tv_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="분류"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/aa_tv_expenses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/aa_tv_income"
+                android:background="@drawable/add_class_bg_selector"
+                android:text="지출"
+                android:textColor="@drawable/add_class_color_selector" />
+
+            <TextView
+                android:id="@+id/aa_tv_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/aa_tv_withdraw"
+                android:background="@drawable/add_class_bg_selector"
+                android:text="수입"
+                android:textColor="@drawable/add_class_color_selector" />
+
+            <TextView
+                android:id="@+id/aa_tv_withdraw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/add_class_bg_selector"
+                android:text="이체"
+                android:textColor="@drawable/add_class_color_selector" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/aa_price_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aa_class_box"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/aa_tv_price"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="금액"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/aa_et_price"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/aa_category_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aa_price_box"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/aa_tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="카테고리"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/aa_et_category"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:autofillHints="미분류" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/aa_pay_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aa_category_box"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/aa_tv_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="입금"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/aa_et_pay"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:hint="입금계좌 선택" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/aa_contents_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aa_pay_box"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/aa_tv_contents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="내용"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/aa_et_contents"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:hint="내용을 입력하세요" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/aa_date_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aa_contents_box"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/aa_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="날짜"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/aa_et_date"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

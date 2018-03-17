@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nineclown.monyc.main.CalendarFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/fc_iv_logo"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/join_logo" />
+
+    <TextView
+        android:id="@+id/fc_tv_nov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="데이터를 가져오는 곳입니다."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fc_iv_logo"
+        android:textColor="@color/black"
+        />
+    <ProgressBar
+        android:id="@+id/fc_progressbar"
+        android:layout_below="@+id/fc_tv_nov"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

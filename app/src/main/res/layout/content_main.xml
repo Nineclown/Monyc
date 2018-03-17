@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.nineclown.monyc.main.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/am_Top_Box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black">
+
+            <LinearLayout
+                android:id="@+id/am_Tab_Box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:weightSum="3">
+
+                <ImageButton
+                    android:id="@+id/am_bt_date"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_tab_bg_selector"
+                    android:src="@drawable/main_tab_date_selector" />
+
+                <ImageButton
+                    android:id="@+id/am_bt_calendar"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_tab_bg_selector"
+                    android:src="@drawable/main_tab_calendar_selector" />
+
+                <ImageButton
+                    android:id="@+id/am_bt_analysis"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_tab_bg_selector"
+                    android:src="@drawable/main_tab_analysis_selector" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/am_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/am_Top_Box"></android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/am_drawer_box"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/am_iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/join_logo" />
+
+
+        <TextView
+            android:id="@+id/am_tv_email"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/am_iv_logo"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:text="email"
+            android:textSize="13dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/am_tv_log_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:text="log out"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

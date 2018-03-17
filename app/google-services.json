@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1005193487360",
+    "firebase_url": "https://monycl-184710.firebaseio.com",
+    "project_id": "monycl-184710",
+    "storage_bucket": "monycl-184710.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1005193487360:android:061069e871c33332",
+        "android_client_info": {
+          "package_name": "com.nineclown.monyc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1005193487360-lecrl9cpuule4imfu2oinioljlpvqb9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkhNNd4RyRSa031boax7SoWsnCWElzx44"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
