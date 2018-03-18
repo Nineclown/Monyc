@@ -18,6 +18,7 @@ import java.util.regex.Pattern;
 
 public class JoinActivity extends AppCompatActivity {
     private static final String TAG = "JoinActivity";
+    //git test
 
     private ViewPager pager;
     private RelativeLayout relativeLayout;
